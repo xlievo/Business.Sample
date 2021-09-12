@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+	<TemplateData>
+        <Name>Business Sample</Name>
+        <Description>This is a quick project template for Business.AspNet</Description>
+        <ProjectType>CSharp</ProjectType>
+		<Icon>icon.png</Icon>
+		<PreviewImage>icon.png</PreviewImage>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+			<SolutionFolder Name="$safeprojectname$">
+				<ProjectTemplateLink CopyParameters="true" ProjectName="Startup">
+					Startup\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink CopyParameters="true" ProjectName="Common">
+					Common\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink CopyParameters="true" ProjectName="App">
+					App\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink CopyParameters="true" ProjectName="Client">
+					Client\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

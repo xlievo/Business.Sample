@@ -1,0 +1,6 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="$(ProjectDir)Business.Client.Build\netstandard.dll" #>
+<#@ assembly name="$(ProjectDir)Business.Client.Build\Newtonsoft.Json.dll" #>
+<#@ assembly name="$(ProjectDir)Business.Client.Build\Business.Client.dll" #>
+<# Write(Business.Client.Document.Doc.Build("http://localhost:5000/business.json")); #>

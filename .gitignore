@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs
+/App/bin
+/App/obj
+/Client/bin
+/Client/obj
+/Common/bin
+/Common/obj
+/Startup/obj
+/Startup/bin
+/VSIX/bin
+/VSIX/obj
