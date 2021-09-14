@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VSIX.ab5ecf48-da36-4ed1-b6c6-40a7e8f8dc84" Version="1.4" Language="en-US" Publisher="xlievo" />
+        <Identity Id="VSIX.ab5ecf48-da36-4ed1-b6c6-40a7e8f8dc84" Version="1.4.1" Language="en-US" Publisher="xlievo" />
         <DisplayName>Business.AspNet</DisplayName>
         <Description xml:space="preserve">This is a quick project template for Business.AspNet</Description>
         <MoreInfo>https://github.com/xlievo/Business.AspNet</MoreInfo>

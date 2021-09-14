@@ -11,9 +11,6 @@ using System.Linq;
 using System.Net.Http;
 
 //namespace $ext_safeprojectname$
-//{
-
-//}
 
 public class Startup
 {
@@ -63,9 +60,13 @@ public class Startup
 
         #endregion
 
-        /* logClient
+        /*
+        https://hub.docker.com/repository/docker/xlievo/elastic
+        docker run -itd -p 5555:80 -e es="http://192.168.1.114:9200" --name elastic xlievo/elastic:1.1
+        */
+        /*
         var logClient = app.ApplicationServices.GetService<IHttpClientFactory>().CreateClient("log");
-        logClient.BaseAddress = new Uri("http://localhost:5200/api");
+        logClient.BaseAddress = new Uri("http://localhost:5555/api");
         */
 
         app.CreateBusiness(logOptions =>

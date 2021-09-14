@@ -34,7 +34,7 @@ public class Host_localhost_5000
         /// <summary>
         /// MyLogicArg!
         /// </summary>
-        public class MyLogic_Arg
+        public struct MyLogic_Arg
         {
             /// <summary>
             /// AAA
@@ -50,7 +50,7 @@ public class Host_localhost_5000
         /// <summary>
         /// MyLogicArg!
         /// </summary>
-        public class MyLogic_Result
+        public struct MyLogic_Result
         {
             /// <summary>
             /// AAA
@@ -64,7 +64,7 @@ public class Host_localhost_5000
         }
 
         /// <summary>
-        /// MyLogicArg!
+        /// MyParameters!
         /// </summary>
         public class MyParameters_Arg
         {
@@ -80,7 +80,7 @@ public class Host_localhost_5000
         }
 
         /// <summary>
-        /// MyLogicArg!
+        /// MyParameters!
         /// </summary>
         public class MyParameters_Result
         {
@@ -96,52 +96,35 @@ public class Host_localhost_5000
         }
 
         /// <summary>
-        /// API data
+        /// MyLogicArg!
         /// </summary>
-        public class WebSocketPushLogic_Arg
+        public struct WebSocketPushLogic_Arg
         {
             /// <summary>
-            /// MyLogicArg!
+            /// AAA
             /// </summary>
-            public MyLogicArg arg { get; set; }
-
-            public string aaa { get; set; }
+            public string A { get; set; }
 
             /// <summary>
-            /// MyLogicArg!
+            /// BBB
             /// </summary>
-            public class MyLogicArg
-            {
-                /// <summary>
-                /// AAA
-                /// </summary>
-                public string A { get; set; }
-
-                /// <summary>
-                /// BBB
-                /// </summary>
-                public string B { get; set; }
-            }
+            public string B { get; set; }
         }
 
-        public class WebSocketPushLogic_Result
+        /// <summary>
+        /// WebSocketPushLogicData
+        /// </summary>
+        public struct WebSocketPushLogic_Result
         {
-            public WebSocketPushLogicResult Item1 { get; set; }
+            /// <summary>
+            /// CCC
+            /// </summary>
+            public string C { get; set; }
 
-            public string Item2 { get; set; }
-
-            public class WebSocketPushLogicResult
-            {
-                /// <summary>
-                /// CCC
-                /// </summary>
-                public string C { get; set; }
-
-                /// <summary>
-                /// DDD
-                /// </summary>
-                public string D { get; set; }
-            }
+            /// <summary>
+            /// DDD
+            /// </summary>
+            public string D { get; set; }
         }
 
         #endregion
@@ -151,6 +134,6 @@ public class Host_localhost_5000
 
     static Host_localhost_5000()
     {
-        Utils.Pushs.Add(new BusinessInfo("MyBusiness", "WebSocketPushLogic"), new Push(typeof(MyBusiness.WebSocketPushLogic_Result), c => MyBusiness.WebSocketPushLogic?.Invoke(c as MyBusiness.WebSocketPushLogic_Result)));
+        Utils.Pushs.Add(new BusinessInfo("MyBusiness", "WebSocketPushLogic"), new Push(typeof(MyBusiness.WebSocketPushLogic_Result), c => MyBusiness.WebSocketPushLogic?.Invoke(c)));
     }
 }
